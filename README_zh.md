@@ -1,7 +1,7 @@
 # dsh-video
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](python/requirements.txt)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue)](python/requirements.txt)
 [![Node](https://img.shields.io/badge/node-20%2B-brightgreen)](package.json)
 [![DSH](https://img.shields.io/badge/DSH-0.2.1--rc.5-purple)](https://github.com/deepseek-ai)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational)](CHANGELOG.md)
@@ -45,7 +45,7 @@
 
 - **DSH** 0.2.1-rc.2 及以上（实测 0.2.1-rc.5）
 - **Node.js** 20+
-- **Python** 3.10+（推荐 3.12）
+- **Python** 3.11+（推荐 3.12）
 - **FFmpeg** 与 **ffprobe** —— 放进 `PATH` 或 `tools/ffmpeg/bin/` 均可
 - **约 2.5 GB** 磁盘用于 Python 环境，另加每个 Whisper 模型 0.5–3 GB
 - **Microsoft Edge** 仅抖音通道需要（Linux/macOS 自动退回 yt-dlp）

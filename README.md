@@ -1,7 +1,7 @@
 # dsh-video
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](python/requirements.txt)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue)](python/requirements.txt)
 [![Node](https://img.shields.io/badge/node-20%2B-brightgreen)](package.json)
 [![DSH](https://img.shields.io/badge/DSH-0.2.1--rc.5-purple)](https://github.com/deepseek-ai)
 [![Version](https://img.shields.io/badge/version-1.0.0-informational)](CHANGELOG.md)
@@ -47,7 +47,7 @@ link / local file
 
 - **DSH** 0.2.1-rc.2 or newer (tested on 0.2.1-rc.5)
 - **Node.js** 20+
-- **Python** 3.10+ (3.12 recommended)
+- **Python** 3.11+ (3.12 recommended)
 - **FFmpeg** and **ffprobe** — either on `PATH` or in `tools/ffmpeg/bin/`
 - **~2.5 GB** disk for the Python environment, plus 0.5–3 GB per Whisper model
 - **Microsoft Edge** only for the Douyin channel (Linux/macOS fall back to yt-dlp)

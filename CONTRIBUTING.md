@@ -52,7 +52,7 @@ npm run doctor                      # expect ffmpeg + model warnings until you a
 python -m ytdip.fetch_model small   # run from python/ if you want ASR
 ```
 
-You need Node 20+, Python 3.10+ (3.12 recommended) and FFmpeg on `PATH` or in
+You need Node 20+, Python 3.11+ (3.12 recommended) and FFmpeg on `PATH` or in
 `tools/ffmpeg/bin`.
 
 ## Running checks
