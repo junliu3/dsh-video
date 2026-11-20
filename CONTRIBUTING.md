@@ -65,6 +65,9 @@ node scripts/check-manifest.mjs
 for f in lib/*.js scripts/*.mjs; do node --check "$f"; done
 ```
 
+CI installs `python/requirements-dev.txt` (requests + websockets only) instead
+of the full media stack; a bootstrap environment already contains them.
+
 Optional, if you have the venv active:
 
 ```bash

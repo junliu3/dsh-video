@@ -1,0 +1,8 @@
+# Test-only dependencies.
+#
+# The unit tests import ytdip.acquire, which imports the Douyin channel, which
+# imports requests and websockets at module load. CI installs this file instead
+# of the full media stack (faster-whisper / ctranslate2 are heavy and not needed
+# for the tests).
+requests==2.34.2
+websockets==17.4
