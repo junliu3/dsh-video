@@ -1,0 +1,9 @@
+# dsh-video bundle layer
+#
+# DSH loads this file automatically when the plugin is listed in
+# `dsh.profile.bundles`. Keep the insert here — do NOT copy this block into the
+# profile's cordis.patch.yml, or the entry id will be duplicated and the settings
+# page will refuse to save.
+- insert:
+    - id: dsh-video
+      name: dsh-video

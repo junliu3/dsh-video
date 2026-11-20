@@ -1,0 +1,19 @@
+# Auto-detect line endings; keep the working tree consistent on Windows.
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.json text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.md   text eol=lf
+
+# Binary assets
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.mp4  binary
+*.mp3  binary
+*.docx binary
+*.bin  binary

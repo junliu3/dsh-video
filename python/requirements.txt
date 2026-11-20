@@ -1,0 +1,9 @@
+# Versions verified against the local .venv-asr (Python 3.12).
+faster-whisper==1.2.1
+python-docx==1.2.0
+requests==2.34.2
+websockets==17.4
+
+# Site extraction for everything except Douyin.
+# A local copy in python/vendor/yt_dlp, if present, takes precedence.
+yt-dlp==2026.10.26

@@ -1,0 +1,63 @@
+{
+  "name": "dsh-video",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: video link → download → speech-to-text → structured document. Douyin plus any site yt-dlp supports.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "python/ytdip",
+    "python/requirements.txt",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "README_zh.md"
+  ],
+  "scripts": {
+    "bootstrap": "node scripts/bootstrap-env.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "selftest": "node scripts/selftest.mjs",
+    "test": "python -m unittest discover -s tests -t . -v"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-video",
+    "deepseek-harness",
+    "douyin",
+    "bilibili",
+    "yt-dlp",
+    "whisper",
+    "faster-whisper",
+    "speech-to-text",
+    "transcript",
+    "video-to-text"
+  ],
+  "author": "junliu3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junliu3/dsh-video.git"
+  },
+  "homepage": "https://github.com/junliu3/dsh-video#readme",
+  "bugs": {
+    "url": "https://github.com/junliu3/dsh-video/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dshTarget": "0.2.1-rc.5",
+  "private": true
+}

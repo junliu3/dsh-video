@@ -1,0 +1,29 @@
+# Local runtime assets — never commit these
+python/.venv-asr/
+python/vendor/
+tools/ffmpeg/
+runtime/models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Job state / logs / partial downloads
+.state/
+*.log
+*.part
+*.cand*
+*.tmp.mp3
+
+# Node
+node_modules/
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

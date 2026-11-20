@@ -1,0 +1,74 @@
+name: Bug report
+description: Something does not work — a tool error, a crash, a wrong document
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please run `npm run doctor` first and paste the
+        output — most failures are missing ffmpeg, a missing model, or a stale
+        plugin entry, and the self-check names them directly.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you expect, and what did you get instead?
+      placeholder: I asked for a Bilibili link and the tool returned NO_STREAM...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Restart DSH
+        2. Ask: "把 https://... 转成文档"
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `npm run doctor`
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: dsh-video version
+      placeholder: 1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: DSH / OS / Python
+      placeholder: DSH 0.2.1-rc.5, Windows 11, Python 3.12.10
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Job log (optional)
+      description: Path is `<dataDir>/.state/logs/<jobId>.log`.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This happens with a link I have the right to download
+          required: true
+        - label: I removed API keys, cookies and personal paths from the logs
+          required: true
